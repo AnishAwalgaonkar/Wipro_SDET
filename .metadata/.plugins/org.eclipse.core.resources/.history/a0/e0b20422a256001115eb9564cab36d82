@@ -1,0 +1,51 @@
+package sdet_selenium_day_27;
+
+package com.example.grid;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class GridTest {
+    // ThreadLocal ensures thread safety during parallel execution
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
+    @BeforeMethod
+    @Parameters("browser")
+    public void setUp(String browser) throws MalformedURLException {
+        // Change this URL if your Hub is hosted on a remote machine
+        URL hubUrl = new URL("http://localhost:4444/wd/hub"); 
+
+        if (browser.equalsIgnoreCase("chrome")) {
+            ChromeOptions options = new ChromeOptions();
+            driver.set(new RemoteWebDriver(hubUrl, options));
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            FirefoxOptions options = new FirefoxOptions();
+            driver.set(new RemoteWebDriver(hubUrl, options));
+        }
+    }
+
+    @Test
+    public void executeTest() {
+        WebDriver currentDriver = driver.get();
+        currentDriver.get("https://google.com");
+        System.out.println("Title: " + currentDriver.getTitle() + " on Thread: " + Thread.currentThread().getId());
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        if (driver.get() != null) {
+            driver.get().quit();
+            driver.remove();
+        }
+    }
+}
+

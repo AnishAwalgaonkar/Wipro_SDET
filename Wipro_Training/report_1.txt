@@ -1,0 +1,7 @@
+---- Medical Report ----
+Patient ID: 1
+Name: Amit
+Age: 25
+Illness: Fever
+Diagnosis: Tablet
+Treatment: Rest

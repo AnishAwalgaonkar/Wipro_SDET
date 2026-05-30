@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-25T17:50:56 IST" name="API Suite" finished-at="2026-05-25T17:51:39 IST" duration-ms="42761">
+    <groups>
+    </groups>
+    <test started-at="2026-05-25T17:50:56 IST" name="User API Test" finished-at="2026-05-25T17:51:39 IST" duration-ms="42761">
+      <class name="sdet_selenium_day_28.SortOrderUser_Test">
+        <test-method signature="getAllUsers()[pri:0, instance:sdet_selenium_day_28.SortOrderUser_Test@387a8303]" started-at="2026-05-25T17:51:30 IST" name="getAllUsers" finished-at="2026-05-25T17:51:31 IST" duration-ms="900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+      </class> <!-- sdet_selenium_day_28.SortOrderUser_Test -->
+      <class name="sdet_selenium_day_28.LoginUser_Test">
+        <test-method signature="loginUser()[pri:0, instance:sdet_selenium_day_28.LoginUser_Test@4f0f2942]" started-at="2026-05-25T17:51:19 IST" name="loginUser" finished-at="2026-05-25T17:51:21 IST" duration-ms="1590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUser -->
+      </class> <!-- sdet_selenium_day_28.LoginUser_Test -->
+      <class name="sdet_selenium_day_28.LimitSkipUser_Test">
+        <test-method signature="getAllUsers()[pri:0, instance:sdet_selenium_day_28.LimitSkipUser_Test@69504ae9]" started-at="2026-05-25T17:51:29 IST" name="getAllUsers" finished-at="2026-05-25T17:51:30 IST" duration-ms="767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+      </class> <!-- sdet_selenium_day_28.LimitSkipUser_Test -->
+      <class name="sdet_selenium_day_28.SearchUser_Test">
+        <test-method signature="getAllUsers()[pri:0, instance:sdet_selenium_day_28.SearchUser_Test@47caedad]" started-at="2026-05-25T17:51:27 IST" name="getAllUsers" finished-at="2026-05-25T17:51:28 IST" duration-ms="1247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+      </class> <!-- sdet_selenium_day_28.SearchUser_Test -->
+      <class name="sdet_selenium_day_28.GetCurrentUser_Test">
+        <test-method signature="getCurrentUser()[pri:0, instance:sdet_selenium_day_28.GetCurrentUser_Test@2657d4dd]" started-at="2026-05-25T17:51:21 IST" name="getCurrentUser" finished-at="2026-05-25T17:51:26 IST" duration-ms="5540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCurrentUser -->
+      </class> <!-- sdet_selenium_day_28.GetCurrentUser_Test -->
+      <class name="sdet_selenium_day_28.AddNewUser_Test">
+        <test-method signature="addUser()[pri:0, instance:sdet_selenium_day_28.AddNewUser_Test@126253fd]" started-at="2026-05-25T17:51:35 IST" name="addUser" finished-at="2026-05-25T17:51:36 IST" duration-ms="1607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
+      </class> <!-- sdet_selenium_day_28.AddNewUser_Test -->
+      <class name="sdet_selenium_day_28.GetUserTodosByID_Test">
+        <test-method signature="getAllUsers()[pri:0, instance:sdet_selenium_day_28.GetUserTodosByID_Test@7eecb5b8]" started-at="2026-05-25T17:51:32 IST" name="getAllUsers" finished-at="2026-05-25T17:51:35 IST" duration-ms="2486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+      </class> <!-- sdet_selenium_day_28.GetUserTodosByID_Test -->
+      <class name="sdet_selenium_day_28.GetAllUsers_Test">
+        <test-method signature="getAllUsers()[pri:0, instance:sdet_selenium_day_28.GetAllUsers_Test@210ab13f]" started-at="2026-05-25T17:50:56 IST" name="getAllUsers" finished-at="2026-05-25T17:51:19 IST" duration-ms="22417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+      </class> <!-- sdet_selenium_day_28.GetAllUsers_Test -->
+      <class name="sdet_selenium_day_28.GetUserCartByID_Test">
+        <test-method signature="getAllUsers()[pri:0, instance:sdet_selenium_day_28.GetUserCartByID_Test@28cda624]" started-at="2026-05-25T17:51:31 IST" name="getAllUsers" finished-at="2026-05-25T17:51:31 IST" duration-ms="627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+      </class> <!-- sdet_selenium_day_28.GetUserCartByID_Test -->
+      <class name="sdet_selenium_day_28.GetUserPostByID_Test">
+        <test-method signature="getAllUsers()[pri:0, instance:sdet_selenium_day_28.GetUserPostByID_Test@1500b2f3]" started-at="2026-05-25T17:51:31 IST" name="getAllUsers" finished-at="2026-05-25T17:51:32 IST" duration-ms="905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+      </class> <!-- sdet_selenium_day_28.GetUserPostByID_Test -->
+      <class name="sdet_selenium_day_28.UpdateUser_Test">
+        <test-method signature="updateUser()[pri:0, instance:sdet_selenium_day_28.UpdateUser_Test@57db2b13]" started-at="2026-05-25T17:51:36 IST" name="updateUser" finished-at="2026-05-25T17:51:38 IST" duration-ms="1638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+      </class> <!-- sdet_selenium_day_28.UpdateUser_Test -->
+      <class name="sdet_selenium_day_28.GetSingleUser_Test">
+        <test-method signature="getAllUsers()[pri:0, instance:sdet_selenium_day_28.GetSingleUser_Test@5340477f]" started-at="2026-05-25T17:51:26 IST" name="getAllUsers" finished-at="2026-05-25T17:51:27 IST" duration-ms="670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+      </class> <!-- sdet_selenium_day_28.GetSingleUser_Test -->
+      <class name="sdet_selenium_day_28.FilterUser_Test">
+        <test-method signature="getAllUsers()[pri:0, instance:sdet_selenium_day_28.FilterUser_Test@7139992f]" started-at="2026-05-25T17:51:28 IST" name="getAllUsers" finished-at="2026-05-25T17:51:29 IST" duration-ms="879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+      </class> <!-- sdet_selenium_day_28.FilterUser_Test -->
+      <class name="sdet_selenium_day_28.DeleteUser_Test">
+        <test-method signature="deleteUser()[pri:0, instance:sdet_selenium_day_28.DeleteUser_Test@475c9c31]" started-at="2026-05-25T17:51:38 IST" name="deleteUser" finished-at="2026-05-25T17:51:39 IST" duration-ms="963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- sdet_selenium_day_28.DeleteUser_Test -->
+    </test> <!-- User API Test -->
+  </suite> <!-- API Suite -->
+</testng-results>

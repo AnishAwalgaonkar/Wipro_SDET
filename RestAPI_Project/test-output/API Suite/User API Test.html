@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>TestNG:  User API Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>User API Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 25 17:50:56 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>42 seconds (42761 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='sdet_selenium_day_28.GetCurrentUser_Test.getCurrentUser()'><b>getCurrentUser</b><br>Test class: sdet_selenium_day_28.GetCurrentUser_Test</td>
+<td></td>
+<td>5</td>
+<td>sdet_selenium_day_28.GetCurrentUser_Test@2657d4dd</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.GetSingleUser_Test.getAllUsers()'><b>getAllUsers</b><br>Test class: sdet_selenium_day_28.GetSingleUser_Test</td>
+<td></td>
+<td>0</td>
+<td>sdet_selenium_day_28.GetSingleUser_Test@5340477f</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.LimitSkipUser_Test.getAllUsers()'><b>getAllUsers</b><br>Test class: sdet_selenium_day_28.LimitSkipUser_Test</td>
+<td></td>
+<td>0</td>
+<td>sdet_selenium_day_28.LimitSkipUser_Test@69504ae9</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.DeleteUser_Test.deleteUser()'><b>deleteUser</b><br>Test class: sdet_selenium_day_28.DeleteUser_Test</td>
+<td></td>
+<td>0</td>
+<td>sdet_selenium_day_28.DeleteUser_Test@475c9c31</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.SearchUser_Test.getAllUsers()'><b>getAllUsers</b><br>Test class: sdet_selenium_day_28.SearchUser_Test</td>
+<td></td>
+<td>1</td>
+<td>sdet_selenium_day_28.SearchUser_Test@47caedad</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.FilterUser_Test.getAllUsers()'><b>getAllUsers</b><br>Test class: sdet_selenium_day_28.FilterUser_Test</td>
+<td></td>
+<td>0</td>
+<td>sdet_selenium_day_28.FilterUser_Test@7139992f</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.GetUserTodosByID_Test.getAllUsers()'><b>getAllUsers</b><br>Test class: sdet_selenium_day_28.GetUserTodosByID_Test</td>
+<td></td>
+<td>2</td>
+<td>sdet_selenium_day_28.GetUserTodosByID_Test@7eecb5b8</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.AddNewUser_Test.addUser()'><b>addUser</b><br>Test class: sdet_selenium_day_28.AddNewUser_Test</td>
+<td></td>
+<td>1</td>
+<td>sdet_selenium_day_28.AddNewUser_Test@126253fd</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.LoginUser_Test.loginUser()'><b>loginUser</b><br>Test class: sdet_selenium_day_28.LoginUser_Test</td>
+<td></td>
+<td>1</td>
+<td>sdet_selenium_day_28.LoginUser_Test@4f0f2942</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.SortOrderUser_Test.getAllUsers()'><b>getAllUsers</b><br>Test class: sdet_selenium_day_28.SortOrderUser_Test</td>
+<td></td>
+<td>0</td>
+<td>sdet_selenium_day_28.SortOrderUser_Test@387a8303</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.GetUserCartByID_Test.getAllUsers()'><b>getAllUsers</b><br>Test class: sdet_selenium_day_28.GetUserCartByID_Test</td>
+<td></td>
+<td>0</td>
+<td>sdet_selenium_day_28.GetUserCartByID_Test@28cda624</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.GetUserPostByID_Test.getAllUsers()'><b>getAllUsers</b><br>Test class: sdet_selenium_day_28.GetUserPostByID_Test</td>
+<td></td>
+<td>0</td>
+<td>sdet_selenium_day_28.GetUserPostByID_Test@1500b2f3</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.UpdateUser_Test.updateUser()'><b>updateUser</b><br>Test class: sdet_selenium_day_28.UpdateUser_Test</td>
+<td></td>
+<td>1</td>
+<td>sdet_selenium_day_28.UpdateUser_Test@57db2b13</td></tr>
+<tr>
+<td title='sdet_selenium_day_28.GetAllUsers_Test.getAllUsers()'><b>getAllUsers</b><br>Test class: sdet_selenium_day_28.GetAllUsers_Test</td>
+<td></td>
+<td>22</td>
+<td>sdet_selenium_day_28.GetAllUsers_Test@210ab13f</td></tr>
+</table><p>
+</body>
+</html>

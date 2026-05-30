@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="API Suite">
+
+    <test name="User API Test">
+        <classes>
+            <class name="sdet_selenium_day_28.GetAllUsers_Test"/>
+            <class name="sdet_selenium_day_28.LoginUser_Test"/>
+            <class name="sdet_selenium_day_28.GetCurrentUser_Test"/>
+            <class name="sdet_selenium_day_28.GetSingleUser_Test"/>
+            <class name="sdet_selenium_day_28.SearchUser_Test"/>
+            <class name="sdet_selenium_day_28.FilterUser_Test"/>
+            <class name="sdet_selenium_day_28.LimitSkipUser_Test"/>
+            <class name="sdet_selenium_day_28.SortOrderUser_Test"/>
+            <class name="sdet_selenium_day_28.GetUserCartByID_Test"/>
+            <class name="sdet_selenium_day_28.GetUserPostByID_Test"/>
+            <class name="sdet_selenium_day_28.GetUserTodosByID_Test"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,24 @@
+package sdet_selenium_day_28;
+
+import static io.restassured.RestAssured.*;
+
+import org.testng.annotations.Test;
+
+public class GetCurrentUser_Test {
+
+    @Test
+    public void getCurrentUser() {
+
+        String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...";
+
+        given()
+            .header("Authorization", "Bearer " + token)
+
+        .when()
+            .get("https://dummyjson.com/user/me")
+
+        .then()
+            .statusCode(200)
+            .log().all();
+    }
+}

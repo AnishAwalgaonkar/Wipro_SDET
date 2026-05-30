@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org">
+<suite name="Selenium Grid Parallel Suite" parallel="tests" thread-count="2">
+    
+    <!-- Test Block 1: Chrome -->
+    <test name="Chrome Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.example.grid.GridTest"/>
+        </classes>
+    </test>
+
+    <!-- Test Block 2: Firefox -->
+    <test name="Firefox Test">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.example.grid.GridTest"/>
+        </classes>
+    </test>
+    
+</suite>

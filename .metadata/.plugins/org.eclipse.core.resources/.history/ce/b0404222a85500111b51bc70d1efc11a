@@ -1,0 +1,94 @@
+package day_23;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+ 
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+ 
+public class DDT {
+ 
+    public static void main(String[] args)
+            throws EncryptedDocumentException, IOException {
+ 
+        // Excel File Path
+        FileInputStream fis = new FileInputStream(
+                "C:\\Anish\\Wipro\\Docs\\Book1.xlsx");
+ 
+        // Open Workbook
+        Workbook wb = WorkbookFactory.create(fis);
+ 
+        // Open Sheet
+        Sheet sh = wb.getSheet("Sheet1");
+ 
+        // Get Total Rows
+        int rows = sh.getLastRowNum();
+ 
+        // Data Formatter
+        DataFormatter formatter = new DataFormatter();
+ 
+        // Loop Through Rows
+        for (int i = 1; i <= rows; i++) {
+ 
+            Row row = sh.getRow(i);
+ 
+            // Check Row is not Empty
+            if (row != null) {
+ 
+                // Read Username and Password
+                String Username =
+                        formatter.formatCellValue(row.getCell(0));
+ 
+                String Password =
+                        formatter.formatCellValue(row.getCell(1));
+ 
+                // Launch Browser
+                WebDriver driver = new ChromeDriver();
+ 
+                // Open Website
+                driver.get("https://www.saucedemo.com");
+                driver.manage().window().maximize();
+                System.out.println("Website Opened");
+ 
+                // Enter Username
+                driver.findElement(By.id("user-name"))
+                        .sendKeys(Username);
+                System.out.println("Username Entered : " + Username);
+ 
+                // Enter Password
+                driver.findElement(By.id("password"))
+                        .sendKeys(Password);
+                System.out.println("Password Entered");
+ 
+                // Click Login Button
+                driver.findElement(By.id("login-button"))
+                        .click();
+                System.out.println("Login Button Clicked");
+ 
+                // Login Completed
+                System.out.println("Login Test Completed Successfully");
+ 
+                // Close Browser
+                driver.quit();
+                System.out.println("Browser Closed");
+ 
+                System.out.println(
+                        "----------------------------------");
+            }
+        }
+ 
+        // Close Workbook and File
+        wb.close();
+        fis.close();
+ 
+        System.out.println(
+                "All DDT Test Cases Executed Successfully");
+    }
+}
