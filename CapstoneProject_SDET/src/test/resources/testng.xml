@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--
+    ══════════════════════════════════════════════════════════
+    TestNG Suite  –  testautomationpractice.blogspot.com
+    Run:  mvn test
+          OR  Right-click testng.xml → Run As → TestNG Suite
+    ══════════════════════════════════════════════════════════
+-->
+<suite name="Automation Practice – Full Homepage Suite" verbose="1" parallel="none">
+
+    <listeners>
+        <listener class-name="com.automation.utils.ExtentReportListener"/>
+    </listeners>
+
+    <test name="Homepage All Elements" preserve-order="true">
+        <classes>
+            <!-- LEFT COLUMN -->
+            <class name="com.automation.tests.TC01_FormElementsTest"/>
+            <class name="com.automation.tests.TC02_DatePickerTest"/>
+            <class name="com.automation.tests.TC03_FileUploadTest"/>
+
+            <!-- RIGHT COLUMN – TABLES -->
+            <class name="com.automation.tests.TC04_StaticTableTest"/>
+            <class name="com.automation.tests.TC05_DynamicTableTest"/>
+            <class name="com.automation.tests.TC06_PaginationTableTest"/>
+
+            <!-- RIGHT COLUMN – INTERACTIONS -->
+            <class name="com.automation.tests.TC07_AlertsTest"/>
+            <class name="com.automation.tests.TC08_MouseHoverTest"/>
+            <class name="com.automation.tests.TC09_DoubleClickTest"/>
+            <class name="com.automation.tests.TC10_DragAndDropTest"/>
+            <class name="com.automation.tests.TC11_SliderTest"/>
+            <class name="com.automation.tests.TC12_DynamicButtonTest"/>
+
+            <!-- RIGHT COLUMN – MISC -->
+            <class name="com.automation.tests.TC13_LabelsLinksTest"/>
+            <class name="com.automation.tests.TC14_AccordionTest"/>
+        </classes>
+    </test>
+
+</suite>

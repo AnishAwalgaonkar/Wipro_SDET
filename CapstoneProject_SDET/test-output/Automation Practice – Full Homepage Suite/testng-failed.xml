@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Practice – Full Homepage Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.automation.utils.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Homepage All Elements(failed)">
+    <classes>
+      <class name="com.automation.tests.TC03_FileUploadTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testMultipleFileUpload"/>
+        </methods>
+      </class> <!-- com.automation.tests.TC03_FileUploadTest -->
+      <class name="com.automation.tests.TC02_DatePickerTest">
+        <methods>
+          <include name="testSubmitButton"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testDateRangePicker"/>
+          <include name="testDatePicker2"/>
+        </methods>
+      </class> <!-- com.automation.tests.TC02_DatePickerTest -->
+      <class name="com.automation.tests.TC11_SliderTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testSliderWithKeyboard"/>
+          <include name="testSetSliderTo300"/>
+          <include name="setUp"/>
+          <include name="testSetSliderToMin"/>
+          <include name="testSetSliderToMax"/>
+        </methods>
+      </class> <!-- com.automation.tests.TC11_SliderTest -->
+      <class name="com.automation.tests.TC14_AccordionTest">
+        <methods>
+          <include name="testAllSectionHeadersPresent"/>
+          <include name="testSection3Opens"/>
+          <include name="tearDown"/>
+          <include name="testSection2Opens"/>
+          <include name="setUp"/>
+          <include name="testSubmitButtonsInsidePanels"/>
+          <include name="testSection1Opens"/>
+        </methods>
+      </class> <!-- com.automation.tests.TC14_AccordionTest -->
+      <class name="com.automation.tests.TC09_DoubleClickTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testDoubleClickCopy"/>
+          <include name="testEnterTextField1"/>
+          <include name="setUp"/>
+          <include name="testField1RetainsValue"/>
+        </methods>
+      </class> <!-- com.automation.tests.TC09_DoubleClickTest -->
+      <class name="com.automation.tests.TC12_DynamicButtonTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testClickStop"/>
+          <include name="setUp"/>
+          <include name="testStartButtonVisible"/>
+          <include name="testClickStartRevealStop"/>
+        </methods>
+      </class> <!-- com.automation.tests.TC12_DynamicButtonTest -->
+      <class name="com.automation.tests.TC08_MouseHoverTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testMobilesLinkClickable"/>
+          <include name="testHoverDropdownAppears"/>
+        </methods>
+      </class> <!-- com.automation.tests.TC08_MouseHoverTest -->
+    </classes>
+  </test> <!-- Homepage All Elements(failed) -->
+</suite> <!-- Failed suite [Automation Practice – Full Homepage Suite] -->

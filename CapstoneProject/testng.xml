@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CompleteAutomationSuite"
+       parallel="false"
+       thread-count="1">
+
+    <test name="AllTests">
+
+        <classes>
+
+            <class name="tests.FormTest"/>
+            <class name="tests.DatePickerTest"/>
+            <class name="tests.AlertTest"/>
+            <class name="tests.TableTest"/>
+            <class name="tests.UploadTest"/>
+            <class name="tests.ActionsTest"/>
+            <class name="tests.WindowTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>

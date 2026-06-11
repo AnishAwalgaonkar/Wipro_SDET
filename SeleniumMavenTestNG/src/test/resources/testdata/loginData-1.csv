@@ -1,0 +1,6 @@
+username,password,expectedResult
+Admin,admin123,SUCCESS
+Admin123,admin123,Invalid Credentials
+Admin,wrong123,Invalid Credentials
+,admin123,Required
+Admin,,Required

@@ -1,55 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-23T13:29:28 IST" name="Cross Browser Suite" finished-at="2026-05-23T13:30:17 IST" duration-ms="48999">
+  <suite started-at="2026-06-05T16:34:10 IST" name="OrangeHRM Suite" finished-at="2026-06-05T16:36:23 IST" duration-ms="133325">
     <groups>
     </groups>
-    <test started-at="2026-05-23T13:29:28 IST" name="ChromeTest" finished-at="2026-05-23T13:29:58 IST" duration-ms="30496">
-      <class name="sdet_selenium_day_27.CrossBrowserTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:sdet_selenium_day_27.CrossBrowserTest@198b6731]" started-at="2026-05-23T13:29:28 IST" name="setup" finished-at="2026-05-23T13:29:48 IST" duration-ms="19724" status="PASS">
+    <test started-at="2026-06-05T16:34:10 IST" name="Login Tests" finished-at="2026-06-05T16:36:23 IST" duration-ms="133325">
+      <class name="tests.LoginTest_csv">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:34:10 IST" name="setup" finished-at="2026-06-05T16:34:31 IST" duration-ms="21047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:34:31 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-06-05T16:35:23 IST" duration-ms="52193" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SUCCESS]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLogin()[pri:0, instance:sdet_selenium_day_27.CrossBrowserTest@198b6731]" started-at="2026-05-23T13:29:48 IST" name="verifyLogin" finished-at="2026-05-23T13:29:55 IST" duration-ms="6558" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:sdet_selenium_day_27.CrossBrowserTest@198b6731]" started-at="2026-05-23T13:29:55 IST" name="teardown" finished-at="2026-05-23T13:29:58 IST" duration-ms="3643" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:35:24 IST" name="tearDown" finished-at="2026-06-05T16:35:25 IST" duration-ms="1440" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- sdet_selenium_day_27.CrossBrowserTest -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2026-05-23T13:29:28 IST" name="FirefoxTest" finished-at="2026-05-23T13:30:17 IST" duration-ms="48992">
-      <class name="sdet_selenium_day_27.CrossBrowserTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:sdet_selenium_day_27.CrossBrowserTest@305b7c14]" started-at="2026-05-23T13:29:28 IST" name="setup" finished-at="2026-05-23T13:30:04 IST" duration-ms="36357" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:35:25 IST" name="setup" finished-at="2026-06-05T16:35:29 IST" duration-ms="3664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:35:29 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-06-05T16:35:39 IST" duration-ms="10170" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid Credentials]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:35:39 IST" name="tearDown" finished-at="2026-06-05T16:35:40 IST" duration-ms="939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:35:40 IST" name="setup" finished-at="2026-06-05T16:35:44 IST" duration-ms="4051" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogin()[pri:0, instance:sdet_selenium_day_27.CrossBrowserTest@305b7c14]" started-at="2026-05-23T13:30:04 IST" name="verifyLogin" finished-at="2026-05-23T13:30:10 IST" duration-ms="5701" status="PASS">
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:35:44 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-06-05T16:35:55 IST" duration-ms="10728" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid Credentials]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:sdet_selenium_day_27.CrossBrowserTest@305b7c14]" started-at="2026-05-23T13:30:10 IST" name="teardown" finished-at="2026-05-23T13:30:17 IST" duration-ms="6856" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:35:55 IST" name="tearDown" finished-at="2026-06-05T16:35:56 IST" duration-ms="1293" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- sdet_selenium_day_27.CrossBrowserTest -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- Cross Browser Suite -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:35:56 IST" name="setup" finished-at="2026-06-05T16:36:00 IST" duration-ms="4253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:36:00 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-06-05T16:36:09 IST" duration-ms="9243" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:36:09 IST" name="tearDown" finished-at="2026-06-05T16:36:11 IST" duration-ms="1301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:36:11 IST" name="setup" finished-at="2026-06-05T16:36:14 IST" duration-ms="3310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:36:14 IST" name="verifyLogin" data-provider="loginData" finished-at="2026-06-05T16:36:21 IST" duration-ms="7421" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest_csv@31190526]" started-at="2026-06-05T16:36:21 IST" name="tearDown" finished-at="2026-06-05T16:36:23 IST" duration-ms="1863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest_csv -->
+    </test> <!-- Login Tests -->
+  </suite> <!-- OrangeHRM Suite -->
 </testng-results>

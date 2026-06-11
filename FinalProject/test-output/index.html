@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-GUI_Suite" class="navigator-link">
+              <span class="suite-name border-failed">GUI Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-GUI_Suite" class="navigator-link ">
+                    <span>C:\Anish\Wipro\Workspace\FinalProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-GUI_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-GUI_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-GUI_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-GUI_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-GUI_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-GUI_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-GUI_Suite" class="hide-methods failed suite-GUI_Suite"> (hide)</a> <!-- hide-methods failed suite-GUI_Suite -->
+                      <a href="#" panel-name="suite-GUI_Suite" class="show-methods failed suite-GUI_Suite"> (show)</a> <!-- show-methods failed suite-GUI_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-GUI_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_Suite" title="tests.GUIElementsTest" class="method navigator-link" hash-for-method="verifyMouseHover">verifyMouseHover</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-GUI_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-GUI_Suite" class="hide-methods passed suite-GUI_Suite"> (hide)</a> <!-- hide-methods passed suite-GUI_Suite -->
+                      <a href="#" panel-name="suite-GUI_Suite" class="show-methods passed suite-GUI_Suite"> (show)</a> <!-- show-methods passed suite-GUI_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-GUI_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_Suite" title="tests.GUIElementsTest" class="method navigator-link" hash-for-method="verifyAlerts">verifyAlerts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_Suite" title="tests.GUIElementsTest" class="method navigator-link" hash-for-method="verifyDatePickers">verifyDatePickers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_Suite" title="tests.GUIElementsTest" class="method navigator-link" hash-for-method="verifyDoubleClick">verifyDoubleClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_Suite" title="tests.GUIElementsTest" class="method navigator-link" hash-for-method="verifyDragAndDrop">verifyDragAndDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_Suite" title="tests.GUIElementsTest" class="method navigator-link" hash-for-method="verifyFileUpload">verifyFileUpload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_Suite" title="tests.GUIElementsTest" class="method navigator-link" hash-for-method="verifyGUIElements">verifyGUIElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_Suite" title="tests.GUIElementsTest" class="method navigator-link" hash-for-method="verifyNewTab">verifyNewTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_Suite" title="tests.GUIElementsTest" class="method navigator-link" hash-for-method="verifyPaginationTable">verifyPaginationTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_Suite" title="tests.GUIElementsTest" class="method navigator-link" hash-for-method="verifyPopupWindows">verifyPopupWindows</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_Suite" title="tests.GUIElementsTest" class="method navigator-link" hash-for-method="verifySliderDropdownAndLinks">verifySliderDropdownAndLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GUI_Suite" title="tests.GUIElementsTest" class="method navigator-link" hash-for-method="verifyWikipediaSearchTabs">verifyWikipediaSearchTabs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-GUI_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-GUI_Suite" class="panel GUI_Suite">
+          <div class="suite-GUI_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.GUIElementsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMouseHover">
+                  </a> <!-- verifyMouseHover -->
+                  <span class="method-name">verifyMouseHover</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt; is not clickable at point (75, 23). Other element would receive the click: &lt;div class=&quot;fauxborder-left main-fauxborder-left&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [21d913e69e4ab70a3e2169c2cd878be9, clickElement {id=f.AF66C099C017DD66DD449ECCFF4F3856.d.E13CE197CB992285A4E8CB1E0A3C200E.e.779}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65255}, goog:processID: 13564, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65255/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (21d913e69e4ab70a3e2169c2cd878be9)] -&gt; xpath: //a[text()=&apos;Mobiles&apos;]]
+Session ID: 21d913e69e4ab70a3e2169c2cd878be9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.GUIPage.hoverAndSelectOption(GUIPage.java:438)
+	at tests.GUIElementsTest.verifyMouseHover(GUIElementsTest.java:250)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GUI_Suite-class-failed -->
+          <div class="suite-GUI_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.GUIElementsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAlerts">
+                  </a> <!-- verifyAlerts -->
+                  <span class="method-name">verifyAlerts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDatePickers">
+                  </a> <!-- verifyDatePickers -->
+                  <span class="method-name">verifyDatePickers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDoubleClick">
+                  </a> <!-- verifyDoubleClick -->
+                  <span class="method-name">verifyDoubleClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDragAndDrop">
+                  </a> <!-- verifyDragAndDrop -->
+                  <span class="method-name">verifyDragAndDrop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFileUpload">
+                  </a> <!-- verifyFileUpload -->
+                  <span class="method-name">verifyFileUpload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGUIElements">
+                  </a> <!-- verifyGUIElements -->
+                  <span class="method-name">verifyGUIElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewTab">
+                  </a> <!-- verifyNewTab -->
+                  <span class="method-name">verifyNewTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPaginationTable">
+                  </a> <!-- verifyPaginationTable -->
+                  <span class="method-name">verifyPaginationTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPopupWindows">
+                  </a> <!-- verifyPopupWindows -->
+                  <span class="method-name">verifyPopupWindows</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySliderDropdownAndLinks">
+                  </a> <!-- verifySliderDropdownAndLinks -->
+                  <span class="method-name">verifySliderDropdownAndLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWikipediaSearchTabs">
+                  </a> <!-- verifyWikipediaSearchTabs -->
+                  <span class="method-name">verifyWikipediaSearchTabs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GUI_Suite-class-passed -->
+        </div> <!-- panel GUI_Suite -->
+        <div panel-name="test-xml-GUI_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Anish\Wipro\Workspace\FinalProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;GUI Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;GUI Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.GUIElementsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GUI Tests --&gt;
+&lt;/suite&gt; &lt;!-- GUI Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-GUI_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for GUI Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">GUI Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-GUI_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for GUI Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-GUI_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for GUI Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_GUI_Suite');
+function tableData_GUI_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifySliderDropdownAndLinks')
+data.setCell(0, 2, 'tests.GUIElementsTest')
+data.setCell(0, 3, 35121);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyGUIElements')
+data.setCell(1, 2, 'tests.GUIElementsTest')
+data.setCell(1, 3, 25336);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyWikipediaSearchTabs')
+data.setCell(2, 2, 'tests.GUIElementsTest')
+data.setCell(2, 3, 11393);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyDatePickers')
+data.setCell(3, 2, 'tests.GUIElementsTest')
+data.setCell(3, 3, 11011);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyNewTab')
+data.setCell(4, 2, 'tests.GUIElementsTest')
+data.setCell(4, 3, 9068);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAlerts')
+data.setCell(5, 2, 'tests.GUIElementsTest')
+data.setCell(5, 3, 8891);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyPaginationTable')
+data.setCell(6, 2, 'tests.GUIElementsTest')
+data.setCell(6, 3, 6174);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyFileUpload')
+data.setCell(7, 2, 'tests.GUIElementsTest')
+data.setCell(7, 3, 5203);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyPopupWindows')
+data.setCell(8, 2, 'tests.GUIElementsTest')
+data.setCell(8, 3, 4953);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyMouseHover')
+data.setCell(9, 2, 'tests.GUIElementsTest')
+data.setCell(9, 3, 2878);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyDoubleClick')
+data.setCell(10, 2, 'tests.GUIElementsTest')
+data.setCell(10, 3, 2490);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyDragAndDrop')
+data.setCell(11, 2, 'tests.GUIElementsTest')
+data.setCell(11, 3, 2420);
+window.suiteTableData['GUI_Suite']= { tableData: data, tableDiv: 'times-div-GUI_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-GUI_Suite">
+              </div> <!-- times-div-GUI_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-GUI_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for GUI Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-GUI_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-GUI_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.GUIElementsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyGUIElements</span>
+                <span class="method-start">46525 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDatePickers</span>
+                <span class="method-start">72662 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyFileUpload</span>
+                <span class="method-start">83690 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPaginationTable</span>
+                <span class="method-start">88906 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyWikipediaSearchTabs</span>
+                <span class="method-start">95097 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAlerts</span>
+                <span class="method-start">106521 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyNewTab</span>
+                <span class="method-start">115590 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPopupWindows</span>
+                <span class="method-start">124663 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMouseHover</span>
+                <span class="method-start">129631 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDoubleClick</span>
+                <span class="method-start">132574 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDragAndDrop</span>
+                <span class="method-start">135079 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySliderDropdownAndLinks</span>
+                <span class="method-start">137503 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">172631 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

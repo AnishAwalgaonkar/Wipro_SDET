@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Anish\Wipro\Workspace\Assignments"/>
+			<item value="C:\Anish\Wipro\Workspace\SeleniumMavenTestNG\pom.xml"/>
 			<item value="C:\Anish\Wipro\Workspace\RestAPI_Project\src\test\java\sdet_selenium_day_28\GetCurrentUser_Test.java"/>
 			<item value="C:\Anish\Wipro\Workspace\SeleniumMavenTestNG\src\test\java\sdet_selenium_day_27\testng-grid.xml"/>
 			<item value="C:\Anish\Wipro\Workspace"/>
@@ -48,6 +50,8 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.CP"/>
+			<item value="com.capstone"/>
 			<item value="com.Cucumber"/>
 			<item value="com.RestAPI"/>
 			<item value="com.anish"/>
@@ -55,6 +59,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="FinalProject"/>
+			<item value="CapstoneProject"/>
+			<item value="CapstoneProject_SDET"/>
 			<item value="CucumberTesting"/>
 			<item value="RestAPI_Project"/>
 			<item value="SeleniumMavenTestNG"/>
@@ -87,6 +94,14 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
